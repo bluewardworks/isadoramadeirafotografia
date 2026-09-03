@@ -1,0 +1,1448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #222;
+    background: #faf9f7;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 6%;
+
+    background: rgba(250, 249, 247, 0.95);
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #e8e5df;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    font-size: 0.85rem;
+}
+
+.nav a {
+    transition: opacity 0.3s;
+}
+
+.nav a:hover {
+    opacity: 0.55;
+}
+
+.btn-menu {
+    padding: 10px 18px;
+
+    background: #222;
+    color: white;
+
+    border-radius: 4px;
+}
+
+.menu-mobile {
+    display: none;
+
+    background: none;
+    border: none;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.25)
+        ),
+        url("img/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(3rem, 7vw, 6rem);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero p:not(.subtitle) {
+    max-width: 550px;
+
+    margin-bottom: 35px;
+
+    font-size: 1.05rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border-radius: 4px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 0.85rem;
+
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-primary {
+    background: #222;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 110px 7%;
+}
+
+.section-title {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.4rem, 5vw, 4rem);
+
+    margin-bottom: 15px;
+}
+
+.section-title p:last-child {
+    color: #666;
+}
+
+
+/* =========================
+   PORTFÓLIO
+========================= */
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.portfolio-card {
+    background: white;
+
+    overflow: hidden;
+
+    border: 1px solid #e8e5df;
+}
+
+.portfolio-image {
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.5s;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.04);
+}
+
+.portfolio-content {
+    padding: 25px;
+}
+
+.portfolio-content h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 10px;
+}
+
+.portfolio-content p {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+.portfolio-content a {
+    font-weight: 600;
+
+    font-size: 0.85rem;
+}
+
+.portfolio-complete {
+    text-align: center;
+
+    margin-top: 60px;
+}
+
+.portfolio-complete p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, 1fr)
+        minmax(300px, 1fr);
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: #efede8;
+}
+
+.about-image img {
+    max-height: 650px;
+
+    object-fit: cover;
+}
+
+.about-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.4rem, 5vw, 4rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+
+    color: #555;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.service-card {
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #e8e5df;
+}
+
+.service-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+.service-card a {
+    font-weight: 600;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   VALORES
+========================= */
+
+.prices {
+    background: #efede8;
+}
+
+.price-category {
+    margin-bottom: 90px;
+}
+
+.price-category:last-child {
+    margin-bottom: 0;
+}
+
+.price-category-title {
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+.price-category-title h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.price-category-title p {
+    color: #666;
+}
+
+
+/* =========================
+   CARDS PRINCIPAIS
+========================= */
+
+.price-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+.price-card {
+    position: relative;
+
+    padding: 45px 30px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.price-card.featured {
+    border: 2px solid #222;
+}
+
+
+/* =========================
+   NOSSA SUGESTÃO
+========================= */
+
+.featured-label {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: 6px 14px;
+
+    background: #222;
+    color: white;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   CONTEÚDO DOS CARDS
+========================= */
+
+.price-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 8px;
+}
+
+.price-description {
+    min-height: 65px;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+.price {
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    margin: 20px 0 30px;
+}
+
+.price-card ul {
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+.price-card li {
+    padding: 8px 0;
+
+    border-bottom: 1px solid #eee;
+
+    color: #666;
+}
+
+
+/* =========================
+   VER MAIS PACOTES
+========================= */
+
+.more-packages {
+    max-width: 1150px;
+
+    margin: 25px auto 0;
+
+    text-align: center;
+}
+
+.more-packages-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 22px;
+
+    border: 1px solid #222;
+
+    background: transparent;
+
+    color: #222;
+
+    font-family: inherit;
+
+    font-size: 0.85rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.more-packages-button:hover {
+    background: #222;
+
+    color: white;
+}
+
+.more-packages-button span {
+    font-size: 1rem;
+
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* =========================
+   PACOTES ADICIONAIS
+========================= */
+
+.more-packages-content {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    max-width: 1150px;
+
+    margin: 25px auto 0;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transform: translateY(-10px);
+
+    transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+.more-packages-content.active {
+    max-height: 2000px;
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   CARDS DOS PACOTES ADICIONAIS
+========================= */
+
+.small-price-card {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.small-price-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.small-price-card h4 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 10px;
+}
+
+.small-price-card strong {
+    display: block;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 20px;
+}
+
+.small-price-card .interesse {
+    padding: 10px 18px;
+
+    border: none;
+
+    background: #222;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 0.8rem;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.small-price-card .interesse:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.85;
+}
+
+
+/* =========================
+   OBSERVAÇÃO
+========================= */
+
+.price-note {
+    max-width: 900px;
+
+    margin: 50px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #d5d2cc;
+
+    color: #666;
+
+    font-size: 0.85rem;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PAGAMENTO
+========================= */
+
+.payment {
+    background: #f7f5f1;
+    padding: 90px 20px 50px;
+}
+
+.payment .section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.payment .section-title span {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #777;
+}
+
+.payment .section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+
+    margin-bottom: 12px;
+}
+
+.payment .section-title p {
+    color: #666;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.payment-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.payment-card {
+    padding: 40px 30px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   ÍCONES
+========================= */
+
+.payment-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 50%;
+
+    font-size: 1.25rem;
+
+    color: #333;
+}
+
+.payment-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 10px;
+}
+
+.payment-card > p {
+    max-width: 350px;
+
+    margin: 0 auto;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   INFORMAÇÕES DO PIX
+========================= */
+
+.pix-info {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee;
+}
+
+.pix-info span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: #888;
+}
+
+.pix-info strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 1.1rem;
+}
+
+.pix-info small {
+    color: #777;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   OBSERVAÇÃO
+========================= */
+
+.payment-note {
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 0.8rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   GUIA
+========================= */
+
+.guide-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 20px;
+}
+
+.guide-grid article {
+    padding: 30px;
+
+    border-top: 1px solid #222;
+}
+
+.guide-grid span {
+    font-size: 0.8rem;
+
+    color: #888;
+}
+
+.guide-grid h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.6rem;
+
+    margin: 15px 0;
+}
+
+.guide-grid p {
+    color: #666;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+    background: #efede8;
+}
+
+.faq-container {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 22px 0;
+
+    border: none;
+    background: none;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.faq-question span {
+    font-size: 1.4rem;
+}
+
+.faq-answer {
+    display: none;
+
+    padding: 0 0 20px;
+
+    color: #666;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+
+/* =========================
+   ORÇAMENTO
+========================= */
+
+.budget {
+    display: grid;
+
+    grid-template-columns:
+        0.8fr 1.2fr;
+
+    gap: 80px;
+
+    background: white;
+}
+
+.budget-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.budget-content > p:last-child {
+    color: #666;
+}
+
+.budget-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.budget-form label {
+    margin-top: 10px;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+}
+
+.budget-form input,
+.budget-form select,
+.budget-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    background: #faf9f7;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    outline: none;
+}
+
+.budget-form input:focus,
+.budget-form select:focus,
+.budget-form textarea:focus {
+    border-color: #222;
+}
+
+.budget-form button {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 60px 7% 25px;
+
+    background: #181818;
+
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 50px;
+}
+
+.footer h3,
+.footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #aaa;
+}
+
+.footer a {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #aaa;
+
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    padding-top: 25px;
+
+    border-top: 1px solid #333;
+
+    color: #777;
+
+    font-size: 0.8rem;
+
+    text-align: center;
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-button {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 12px 18px;
+
+    background: #222;
+    color: white;
+
+    border-radius: 30px;
+
+    font-size: 0.85rem;
+    font-weight: 500;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+
+    z-index: 999;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.whatsapp-button svg {
+    width: 19px;
+    height: 19px;
+
+    fill: currentColor;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+
+    background: #333;
+}
+
+/* =========================
+   VALORES - RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .price-grid,
+    .extra-packages {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card {
+        max-width: 500px;
+
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .about,
+    .budget {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 80px 6%;
+    }
+
+    .hero {
+        padding: 110px 7% 70px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .whatsapp-button {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* =========================
+   PAGAMENTO - RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .payment-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .payment-card {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .payment .section-title h2 {
+        font-size: 2rem;
+    }
+
+}
+
+/* =========================
+   MODAL WHATSAPP
+========================= */
+
+.modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+
+    z-index: 2000;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.whatsapp-modal {
+    position: relative;
+
+    width: min(500px, 100%);
+
+    padding: 45px;
+
+    background: #faf9f7;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+    transform: translateY(25px);
+
+    opacity: 0;
+
+    transition:
+        transform 0.45s ease,
+        opacity 0.45s ease;
+}
+
+.modal-overlay.active .whatsapp-modal {
+    transform: translateY(0);
+
+    opacity: 1;
+}
+
+
+/* Ícone */
+
+.modal-icon {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #222;
+
+    border-radius: 50%;
+}
+
+.modal-icon svg {
+    width: 21px;
+    height: 21px;
+
+    fill: #222;
+}
+
+
+/* Título */
+
+.whatsapp-modal h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.3rem;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.whatsapp-modal > p:not(.subtitle) {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* Fechar */
+
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 1.8rem;
+
+    font-weight: 300;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+/* Agora não */
+
+.modal-later {
+    display: block;
+
+    margin: 15px auto 0;
+
+    border: none;
+
+    background: none;
+
+    font-family: inherit;
+
+    font-size: 0.8rem;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+.modal-later:hover {
+    color: #222;
+}
+
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+    .whatsapp-modal {
+        padding: 35px 25px;
+    }
+
+    .whatsapp-modal h2 {
+        font-size: 2rem;
+    }
+
+    .more-packages-content {
+    grid-template-columns: 1fr;
+    }
+
+    .more-packages {
+    width: 100%;
+    }
+
+    .small-price-card {
+    width: 100%;
+    }
+}
+
+/* ======================================
+   CONTROLE DO POP-UP
+====================================== */
+
+.modal-overlay {
+    pointer-events: none;
+}
+
+.modal-overlay.active {
+    pointer-events: auto;
+}
