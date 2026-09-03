@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
-    color: #222;
-    background: #faf9f7;
+    color: #19324D;
+    background: #FAF8EF;
     line-height: 1.6;
 }
 
@@ -47,7 +47,7 @@ img {
 
     z-index: 1000;
 
-    border-bottom: 1px solid #e8e5df;
+    border-bottom: 1px solid #E8E2D3;
 }
 
 .logo {
@@ -75,7 +75,7 @@ img {
 .btn-menu {
     padding: 10px 18px;
 
-    background: #222;
+    background: #19324D;
     color: white;
 
     border-radius: 4px;
@@ -175,7 +175,7 @@ img {
 }
 
 .btn-primary {
-    background: #222;
+    background: #19324D;
     color: white;
 }
 
@@ -216,7 +216,7 @@ img {
 }
 
 .section-title p:last-child {
-    color: #666;
+    color: #6687A5;
 }
 
 
@@ -238,7 +238,7 @@ img {
 
     overflow: hidden;
 
-    border: 1px solid #e8e5df;
+    border: 1px solid #E8E2D3;
 }
 
 .portfolio-image {
@@ -271,7 +271,7 @@ img {
 }
 
 .portfolio-content p {
-    color: #666;
+    color: #6687A5;
 
     margin-bottom: 20px;
 }
@@ -308,7 +308,7 @@ img {
 
     align-items: center;
 
-    background: #efede8;
+    background: #f8f5b5;
 }
 
 .about-image img {
@@ -330,7 +330,7 @@ img {
 .about-content p {
     margin-bottom: 20px;
 
-    color: #555;
+    color: #19324D;
 }
 
 
@@ -352,7 +352,7 @@ img {
 
     background: white;
 
-    border: 1px solid #e8e5df;
+    border: 1px solid #E8E2D3;
 }
 
 .service-card h3 {
@@ -364,7 +364,7 @@ img {
 }
 
 .service-card p {
-    color: #666;
+    color: #6687A5;
 
     margin-bottom: 25px;
 }
@@ -381,7 +381,7 @@ img {
 ========================= */
 
 .prices {
-    background: #efede8;
+    background: #f8f5b5;
 }
 
 .price-category {
@@ -404,7 +404,7 @@ img {
 }
 
 .price-category-title p {
-    color: #666;
+    color: #6687A5;
 }
 
 
@@ -432,7 +432,7 @@ img {
 
     background: white;
 
-    border: 1px solid #ddd;
+    border: 1px solid #DDD5C0;
 
     text-align: center;
 
@@ -449,7 +449,7 @@ img {
 }
 
 .price-card.featured {
-    border: 2px solid #222;
+    border: 2px solid #19324D;
 }
 
 
@@ -467,7 +467,7 @@ img {
 
     padding: 6px 14px;
 
-    background: #222;
+    background: #19324D;
     color: white;
 
     font-size: 0.7rem;
@@ -493,7 +493,7 @@ img {
 .price-description {
     min-height: 65px;
 
-    color: #666;
+    color: #6687A5;
 
     margin-bottom: 25px;
 }
@@ -515,9 +515,9 @@ img {
 .price-card li {
     padding: 8px 0;
 
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #E8E2D3;
 
-    color: #666;
+    color: #6687A5;
 }
 
 
@@ -543,11 +543,11 @@ img {
 
     padding: 12px 22px;
 
-    border: 1px solid #222;
+    border: 1px solid #19324D;
 
     background: transparent;
 
-    color: #222;
+    color: #19324D;
 
     font-family: inherit;
 
@@ -561,7 +561,7 @@ img {
 }
 
 .more-packages-button:hover {
-    background: #222;
+    background: #19324D;
 
     color: white;
 }
@@ -624,7 +624,7 @@ img {
 
     background: white;
 
-    border: 1px solid #ddd;
+    border: 1px solid #DDD5C0;
 
     text-align: center;
 
@@ -661,7 +661,7 @@ img {
 
     border: none;
 
-    background: #222;
+    background: #19324D;
 
     color: white;
 
@@ -694,9 +694,9 @@ img {
 
     padding-top: 25px;
 
-    border-top: 1px solid #d5d2cc;
+    border-top: 1px solid #D8CFB8;
 
-    color: #666;
+    color: #6687A5;
 
     font-size: 0.85rem;
 
@@ -726,7 +726,7 @@ img {
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    color: #777;
+    color: #595549;
 }
 
 .payment .section-title h2 {
@@ -737,7 +737,7 @@ img {
 }
 
 .payment .section-title p {
-    color: #666;
+    color: #6687A5;
 }
 
 
@@ -763,7 +763,7 @@ img {
 
     background: white;
 
-    border: 1px solid #ddd;
+    border: 1px solid #DDD5C0;
 
     text-align: center;
 
@@ -795,13 +795,13 @@ img {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #ddd;
+    border: none;
 
     border-radius: 50%;
 
     font-size: 1.25rem;
 
-    color: #333;
+    color: #6687A5;
 }
 
 .payment-card h3 {
@@ -817,11 +817,15 @@ img {
 
     margin: 0 auto;
 
-    color: #666;
+    color: #6687A5;
 
     line-height: 1.7;
 }
 
+.icon-dinheiro {
+    width: 70px !important;
+    height: 75px !important;
+}
 
 /* =========================
    INFORMAÇÕES DO PIX
@@ -832,7 +836,7 @@ img {
 
     padding-top: 20px;
 
-    border-top: 1px solid #eee;
+    border-top: 1px solid #E8E2D3;
 }
 
 .pix-info span {
@@ -858,7 +862,7 @@ img {
 }
 
 .pix-info small {
-    color: #777;
+    color: #595549;
 
     font-size: 0.8rem;
 }
@@ -875,7 +879,7 @@ img {
 
     text-align: center;
 
-    color: #777;
+    color: #595549;
 
     font-size: 0.8rem;
 
@@ -899,7 +903,7 @@ img {
 .guide-grid article {
     padding: 30px;
 
-    border-top: 1px solid #222;
+    border-top: 1px solid #19324D;
 }
 
 .guide-grid span {
@@ -917,7 +921,7 @@ img {
 }
 
 .guide-grid p {
-    color: #666;
+    color: #6687A5;
 }
 
 
@@ -926,7 +930,7 @@ img {
 ========================= */
 
 .faq {
-    background: #efede8;
+    background: #f8f5b5;
 }
 
 .faq-container {
@@ -967,7 +971,7 @@ img {
 
     padding: 0 0 20px;
 
-    color: #666;
+    color: #6687A5;
 }
 
 .faq-item.active .faq-answer {
@@ -1001,7 +1005,7 @@ img {
 }
 
 .budget-content > p:last-child {
-    color: #666;
+    color: #6687A5;
 }
 
 .budget-form {
@@ -1029,7 +1033,7 @@ img {
 
     border: 1px solid #ccc;
 
-    background: #faf9f7;
+    background: #FAF8EF;
 
     font-family: inherit;
 
@@ -1041,7 +1045,7 @@ img {
 .budget-form input:focus,
 .budget-form select:focus,
 .budget-form textarea:focus {
-    border-color: #222;
+    border-color: #19324D;
 }
 
 .budget-form button {
@@ -1056,7 +1060,7 @@ img {
 .footer {
     padding: 60px 7% 25px;
 
-    background: #181818;
+    background: #19324D;
 
     color: white;
 }
@@ -1078,7 +1082,7 @@ img {
 }
 
 .footer p {
-    color: #aaa;
+    color: #FFF1B8;
 }
 
 .footer a {
@@ -1086,7 +1090,7 @@ img {
 
     margin-bottom: 8px;
 
-    color: #aaa;
+    color: #FFF1B8;
 
     font-size: 0.9rem;
 }
@@ -1098,9 +1102,9 @@ img {
 .footer-bottom {
     padding-top: 25px;
 
-    border-top: 1px solid #333;
+    border-top: 1px solid #6687A5;
 
-    color: #777;
+    color: #D8CFB8;
 
     font-size: 0.8rem;
 
@@ -1124,7 +1128,7 @@ img {
 
     padding: 12px 18px;
 
-    background: #222;
+    background: #19324D;
     color: white;
 
     border-radius: 30px;
@@ -1151,7 +1155,7 @@ img {
 .whatsapp-button:hover {
     transform: translateY(-3px);
 
-    background: #333;
+    background: #6687A5;
 }
 
 /* =========================
@@ -1195,9 +1199,9 @@ img {
 
     padding: 20px;
 
-    background: #faf9f7;
+    background: #FAF8EF;
 
-    border: 1px solid #e8e5df;
+    border: 1px solid #E8E2D3;
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
 
@@ -1336,7 +1340,7 @@ img {
 
     padding: 45px;
 
-    background: #faf9f7;
+    background: #FAF8EF;
 
     text-align: center;
 
@@ -1370,7 +1374,7 @@ img {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid #222;
+    border: 1px solid #19324D;
 
     border-radius: 50%;
 }
@@ -1379,7 +1383,7 @@ img {
     width: 21px;
     height: 21px;
 
-    fill: #222;
+    fill: #19324D;
 }
 
 
@@ -1396,7 +1400,7 @@ img {
 }
 
 .whatsapp-modal > p:not(.subtitle) {
-    color: #666;
+    color: #6687A5;
 
     margin-bottom: 30px;
 }
@@ -1420,7 +1424,7 @@ img {
 
     cursor: pointer;
 
-    color: #555;
+    color: #19324D;
 }
 
 
@@ -1439,13 +1443,13 @@ img {
 
     font-size: 0.8rem;
 
-    color: #777;
+    color: #D8CFB8;
 
     cursor: pointer;
 }
 
 .modal-later:hover {
-    color: #222;
+    color: #19324D;
 }
 
 
@@ -1466,10 +1470,6 @@ img {
     }
 
     .more-packages {
-    width: 100%;
-    }
-
-    .small-price-card {
     width: 100%;
     }
 }
