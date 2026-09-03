@@ -80,6 +80,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    // ======================================
+// FORMATAÇÃO DO TELEFONE
+// ======================================
+
+const campoWhatsapp =
+    document.getElementById("whatsapp");
+
+if (campoWhatsapp) {
+
+    campoWhatsapp.addEventListener("input", () => {
+
+        let numero =
+            campoWhatsapp.value.replace(/\D/g, "");
+
+        numero = numero.substring(0, 11);
+
+        if (numero.length <= 2) {
+
+            campoWhatsapp.value =
+                numero;
+
+        } else if (numero.length <= 7) {
+
+            campoWhatsapp.value =
+                `(${numero.substring(0, 2)}) ${numero.substring(2)}`;
+
+        } else {
+
+            campoWhatsapp.value =
+                `(${numero.substring(0, 2)}) ${numero.substring(2, 7)}-${numero.substring(7)}`;
+
+        }
+
+    });
+
+}
 
     // ======================================
     // BOTÕES "TENHO INTERESSE"
