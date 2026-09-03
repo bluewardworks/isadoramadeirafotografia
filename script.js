@@ -11,6 +11,45 @@ const telefoneFotografa = "5535998171123";
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    // ======================================
+    // MENU MOBILE
+    // ======================================
+
+    const menuMobile = document.getElementById("menuMobile");
+    const header = document.querySelector(".header");
+
+    if (menuMobile && header) {
+
+        menuMobile.addEventListener("click", () => {
+
+            header.classList.toggle("menu-open");
+
+            if (header.classList.contains("menu-open")) {
+                menuMobile.textContent = "✕";
+            } else {
+                menuMobile.textContent = "☰";
+            }
+
+        });
+
+
+        const linksMenu =
+            header.querySelectorAll(".nav a");
+
+        linksMenu.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                header.classList.remove("menu-open");
+
+                menuMobile.textContent = "☰";
+
+            });
+
+        });
+
+    }
+
 
     // ======================================
     // FAQ
@@ -40,43 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
-
-
-    // ======================================
-    // MENU MOBILE
-    // ======================================
-
-    const menuMobile =
-        document.getElementById("menuMobile");
-
-    const nav =
-        document.querySelector(".nav");
-
-    if (menuMobile && nav) {
-
-        menuMobile.addEventListener("click", () => {
-
-            nav.classList.toggle("active");
-
-        });
-
-
-        // Fecha o menu ao clicar em um link
-
-        const linksMenu =
-            nav.querySelectorAll("a");
-
-        linksMenu.forEach(link => {
-
-            link.addEventListener("click", () => {
-
-                nav.classList.remove("active");
-
-            });
-
-        });
-
-    }
 
 
     // ======================================

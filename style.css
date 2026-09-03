@@ -1182,12 +1182,51 @@ img {
 @media (max-width: 900px) {
 
     .nav {
-        display: none;
-    }
+    display: none;
 
-    .menu-mobile {
-        display: block;
-    }
+    position: absolute;
+    top: 100%;
+    right: 6%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 220px;
+
+    padding: 20px;
+
+    background: #faf9f7;
+
+    border: 1px solid #e8e5df;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+
+    gap: 0;
+}
+
+.header.menu-open .nav {
+    display: flex;
+}
+
+.nav a {
+    padding: 12px 5px;
+}
+
+.nav .btn-menu {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.menu-mobile {
+    display: block;
+
+    background: none;
+    border: none;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
 
     .about,
     .budget {
