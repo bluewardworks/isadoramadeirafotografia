@@ -106,12 +106,12 @@ img {
     background:
         linear-gradient(
            90deg,
-            rgba(20, 35, 50, 0.72) 0%,
-            rgba(20, 35, 50, 0.55) 40%,
-            rgba(20, 35, 50, 0.30) 75%,
-            rgba(20, 35, 50, 0.20) 100%
+             rgba(0, 0, 0, 0.18) 0%,
+             rgba(0, 0, 0, 0.12) 25%,
+             rgba(0, 0, 0, 0.05) 45%,
+             rgba(0, 0, 0, 0) 65%
         ),
-        url("img/hero.png");
+        url("img/hero.jpg");
 
     background-size: cover;
     background-position: center 23%;
